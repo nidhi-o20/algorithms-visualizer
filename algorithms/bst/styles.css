@@ -1,0 +1,125 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+  min-height: 100%;
+}
+
+body {
+  background-color: #d3d6c0;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+#header {
+  width: 100%;
+  flex: 0 1 70px;
+  height: 70px;
+  overflow: hidden;
+  position: relative;
+}
+
+#title {
+  text-align: left;
+  font-size: 27px;
+  color: black;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+#OperationContainer {
+  position: absolute;
+  top: 25px;
+  left: 70%;
+}
+
+.button {
+  width: 55px;
+}
+
+#InsertNodeField,
+#DeleteNodeField {
+  width: 120px;
+}
+#DeleteNodeField {
+  margin-left: 10px;
+}
+
+.Canvas {
+  width: 100%;
+  flex: 1 1 auto;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.indicator {
+  position: absolute;
+}
+.indicator text {
+  font-size: 20px !important;
+  color: black !important;
+}
+
+svg {
+  margin-top: 5px;
+  width: 100%;
+  /* max-width: 1200px; */
+  height: 100%;
+  overflow: scroll;
+}
+
+.node circle {
+  fill: #9491ac;
+  /* fill-opacity: 0.6; */
+  stroke: #42bab4;
+  stroke-width: 1px;
+}
+.node text {
+  font-size: 22px;
+  fill: black;
+}
+
+.highlightedNode circle {
+  fill: rgb(0, 255, 21);
+  stroke: rgb(0, 255, 21);
+  stroke-width: 1px;
+}
+
+.null-node,
+.null-link {
+  visibility: hidden;
+}
+
+line {
+  stroke: #099b96;
+}
+
+.LinkAnimation {
+  stroke: rgb(255, 0, 0);
+  stroke-dasharray: 500;
+  animation: filling 1s linear forwards;
+}
+
+@keyframes filling {
+  from {
+    stroke-dashoffset: 500;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
