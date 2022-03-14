@@ -2,6 +2,8 @@
 
 Contains 3 subsections namely Binary Search Tree Visualizer, Sorting Visualizer and Sudoku Solving Visualizer
 
+#### Link to the project - <a href='https://nidhi-o20.github.io/algorithms-visualizer/'>Algorithms Visualizer</a>
+
 ## Binary Search Tree Visualizer
 
 Insert or delete element to visualize the formation of Binary Search Tree.
